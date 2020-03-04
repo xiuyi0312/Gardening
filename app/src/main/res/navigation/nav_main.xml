@@ -1,0 +1,29 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.awesome.gardening.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <!--        todo : animation-->
+        <action
+            android:id="@+id/action_home_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.awesome.gardening.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+        <argument
+            android:name="plantId"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
