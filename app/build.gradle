@@ -32,8 +32,9 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation "androidx.navigation:navigation-fragment:$rootProject.versions.navigationVersion"
-
-
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$rootProject.versions.coordinatorlayoutVersion"
+    implementation "androidx.viewpager2:viewpager2:$rootProject.versions.viewPager2Version"
+    implementation "com.google.android.material:material:$rootProject.versions.materialVersion"
 
 
     testImplementation 'junit:junit:4.12'

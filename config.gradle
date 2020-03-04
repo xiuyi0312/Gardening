@@ -1,5 +1,8 @@
 ext {
     versions = [
-            "navigationVersion" : "2.2.1"
+            "navigationVersion" : "2.2.1",
+            "coordinatorlayoutVersion": "1.1.0",
+            "viewPager2Version": "1.0.0",
+            "materialVersion": "1.2.0-alpha05"
     ]
 }
