@@ -35,7 +35,7 @@ dependencies {
     implementation "androidx.coordinatorlayout:coordinatorlayout:$rootProject.versions.coordinatorlayoutVersion"
     implementation "androidx.viewpager2:viewpager2:$rootProject.versions.viewPager2Version"
     implementation "com.google.android.material:material:$rootProject.versions.materialVersion"
-
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.versions.constraintLayoutVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

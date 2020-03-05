@@ -5,6 +5,7 @@
         android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:statusBarBackground="?attr/colorAccent"
         android:fitsSystemWindows="true">
 
         <androidx.viewpager2.widget.ViewPager2
@@ -17,7 +18,6 @@
             android:id="@+id/app_bar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
 
             <com.google.android.material.appbar.CollapsingToolbarLayout
