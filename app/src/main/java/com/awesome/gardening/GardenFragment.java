@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.awesome.gardening.databinding.FragmentGardenBinding;
 
@@ -18,9 +19,16 @@ public class GardenFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        FragmentGardenBinding binding = FragmentGardenBinding.inflate(inflater, container, false);
+        final FragmentGardenBinding binding = FragmentGardenBinding.inflate(inflater, container, false);
         TextView plant = binding.plantDescription;
         plant.setText(plantDetailExample);
+
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(binding.fab).navigate(R.id.action_home_fragment_to_detail_fragment);
+            }
+        });
         return binding.getRoot();
     }
 }

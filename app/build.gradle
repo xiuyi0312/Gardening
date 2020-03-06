@@ -8,6 +8,10 @@ android {
         enabled = true
     }
 
+    viewBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.awesome.gardening"
         minSdkVersion 21
@@ -36,6 +40,10 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:$rootProject.versions.viewPager2Version"
     implementation "com.google.android.material:material:$rootProject.versions.materialVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.versions.constraintLayoutVersion"
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.versions.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.versions.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.versions.lifecycleViewModelVersion"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
