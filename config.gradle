@@ -4,6 +4,8 @@ ext {
             "coordinatorlayoutVersion": "1.1.0",
             "viewPager2Version": "1.0.0",
             "materialVersion": "1.2.0-alpha05",
-            "constraintLayoutVersion": "2.0.0-beta4"
+            "constraintLayoutVersion": "2.0.0-beta4",
+            "lifecycleVersion": "2.2.0",
+            "lifecycleViewModelVersion": "2.2.0-alpha01"
     ]
 }
